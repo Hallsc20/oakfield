@@ -193,7 +193,7 @@ Claude wrote these where the copy doc was empty, so the pages would work. The co
 
 ## Recent Changes
 
-- 05/11/2026: Got the site ready to publish on GitHub Pages instead of Vercel. The GitHub version is built as plain files, with its links and images pointing to the `/oakfield` folder, and the preview in Ship Studio works as before. Test build passed (all pages, no broken link paths). **Not online yet.** Because GitHub Pages can't resize photos, every screen gets the full-size file. They're all under 300KB, so this should be fine, but check the speed on a phone.
+- 05/11/2026: Published the site on GitHub Pages instead of Vercel, at https://hallsc20.github.io/oakfield/. The code is in a public GitHub project (https://github.com/Hallsc20/oakfield). The GitHub version is built as plain files, with its links and images pointing to the `/oakfield` folder, and the preview in Ship Studio works as before. All pages load online, and it's still hidden from search engines. Because GitHub Pages can't resize photos, every screen gets the full-size file. They're all under 300KB, but the speed still needs checking on a real phone.
 - 29/10/2026: Hid the site from Google and other search engines while it's a draft (it still has placeholder details and a form that doesn't send). Anyone with the link can still open it. To undo this at launch, delete the `robots` lines in `app/layout.tsx`. Not published online yet: publishing from this computer is blocked by a Windows setting.
 - 08/10/2026: Started the prompt log doc and added links to it and the copy doc at the top of SITE.md.
 - 08/10/2026: Added the full "Claude's drafts to rewrite" checklist to SITE.md and the copy doc. Updated Content Status.
@@ -214,6 +214,7 @@ Claude wrote these where the copy doc was empty, so the pages would work. The co
 
 - **To change colours:** ask for it to be changed in `app/globals.css`, but stick to the three logo colours
 - **To add a page:** ask for a new page and give its address, e.g. "/vehicle-livery"
+- **To update the live site:** ask for your changes to be pushed to GitHub. The site republishes itself a few minutes later at https://hallsc20.github.io/oakfield/
 
 ---
 

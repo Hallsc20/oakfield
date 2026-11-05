@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+/* Oakfield brand colours, from the logo pack. Only navy, yellow and white, plus tints of navy. */
+:root {
+  --navy: #1b2a41;
+  --navy-deep: #131f31;
+  --yellow: #f2b705;
+  --white: #ffffff;
+  --ink: #1b2a41;
+  --muted: #4a5568;
+  --line: #e3e6eb;
+  --paper: #f5f6f8;
+}
+
+@theme inline {
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-yellow: var(--yellow);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-paper: var(--paper);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--white);
+  color: var(--ink);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
